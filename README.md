@@ -1,40 +1,44 @@
-# AutoBlueTeam
-Automating the red-teaming of prompt defenses.
+AutoRedTeam
+Introduction
 
-# ChatGPT Automation Script
+AutoRedTeam is a cutting-edge tool designed for red-teaming, specifically targeting AI systems like GPT for security testing. This project automates the process of injecting prompts into GPT interfaces, recording the successful breaches to evaluate the model's resilience against security threats.
+Features
 
-This script automates the process of sending messages to the ChatGPT interface and retrieving responses using Selenium WebDriver. It is designed to import cookies to maintain session, submit text input, and fetch the generated reply from ChatGPT.
+    Automated Prompt Injection: Tests GPT interfaces for vulnerabilities through crafted prompts.
+    Integration with AgentOps AI: Monitors and records each successful injection attempt for in-depth analysis.
+    Selenium Web Automation: Utilizes Selenium for simulating human-like interactions with GPT interfaces.
+    Google Generative AI: Processes responses using Google's advanced generative AI models.
 
-## Description
+Setup
+Requirements
 
-The script is part of a larger project aimed at enhancing user interactions with OpenAI's ChatGPT. It uses Python with Selenium to programmatically control a web browser, simulating the behavior of a human interacting with the ChatGPT interface.
+    Python 3.9+
+    Selenium WebDriver
+    ChromeDriver (compatible with your Chrome version)
 
-## Getting Started
+Installation
 
-### Dependencies
+    Clone this repository.
+    Install necessary Python packages:
 
-- Python 3.9 or above
-- Selenium WebDriver
-- ChromeDriver (compatible with your Chrome version)
-- `webdriver-manager` Python package
+pip install -r requirements.txt
 
-### Installing
+Set up the required environment variables in a .env file:
 
-- Clone the repository to your local machine.
-- Install the required Python packages using `pip`.
+makefile
 
-```bash
-
-pip install selenium webdriver-manager
-
-Setting up Cookies
-
-    Ensure you have a valid openaicookies.json file containing the necessary session cookies.
+    AGENTOPS_API_KEY=<your_agentops_api_key>
 
 Running the Script
 
-Navigate to the script's directory and run the script using Python.
+To run the script, use the following command:
 
-bash
+css
 
 python main.py
+
+Usage
+
+    Modify the main.py script to input your desired prompts.
+    Run the script to automatically interact with the ChatGPT interface.
+    Review the logs and AgentOps dashboard for insights into the security posture.
