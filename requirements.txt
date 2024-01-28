@@ -1,0 +1,4 @@
+selenium
+webdriver-manager
+agentops
+# Add any other dependencies your project might have
